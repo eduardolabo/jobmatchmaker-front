@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Main from "./components/Main";
+import {Switch, Route, BrowserRouter} from "react-router-dom";
+import UploadCV from "./components/UploadCV";
+import ShowCV from "./components/ShowCV";
+import UploadVacancy from "./components/UploadVacancy";
+import ShowVacancy from "./components/ShowVacancy";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter className="App">
+        <Switch>
+            <Route path="/CV/Upload"><UploadCV/></Route>
+            <Route path="/Vacancy/Upload"><UploadVacancy/></Route>
+            <Route path="/Vacancy"><ShowVacancy/></Route>
+            <Route path="/CV"><ShowCV/></Route>
+            <Route path="/"><Main/></Route>
+        </Switch>
+    </BrowserRouter>
   );
 }
 
