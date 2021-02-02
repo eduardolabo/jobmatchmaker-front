@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from "../Layout";
 
 const ShowCV = () => {
     return (
-        <div>
-            
-        </div>
+        <Layout>
+            <h1>Ver CVs</h1>
+        </Layout>
     );
 };
 

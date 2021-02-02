@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const Main = () => {
     return (
 
-    <div className="container">
+    <div className="main">
         <div className="left">
             <h1 className="logotitle">JOBMATCHMAKER</h1>
         </div>

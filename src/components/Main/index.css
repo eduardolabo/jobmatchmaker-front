@@ -38,7 +38,7 @@ html, body {
     margin: 0;
 }
 @media (min-width:320px) {
-    .container {
+    .main {
         display: grid;
     }
     .left {margin-left: 15px}
@@ -53,7 +53,7 @@ html, body {
 }
 
 @media (min-width:981px) { /* big landscape tablets, laptops, and desktops */
-    .container{display:flex;}
+    .main{display:flex;}
     .left{margin-right: 20%;}
     .right{justify-content: left;  }
     .styled-button{

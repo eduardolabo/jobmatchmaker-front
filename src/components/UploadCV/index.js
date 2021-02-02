@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from "../Layout";
 
 const UploadCV = () => {
     return (
-        <div>
-            
-        </div>
+        <Layout>
+            <h1>Subir CV</h1>
+        </Layout>
     );
 };
 

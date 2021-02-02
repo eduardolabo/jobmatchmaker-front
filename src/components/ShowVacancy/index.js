@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from "../Layout";
 
 const ShowVacancy = () => {
     return (
-        <div>
-            
-        </div>
+        <Layout>
+            <h1>Ver Vacantes</h1>
+        </Layout>
     );
 };
 
